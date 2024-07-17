@@ -38,7 +38,7 @@ namespace ClinicApp.Services
             return clinicData;
         }
 
-        public ClinicListData GetClinics(int page, string[] columns)
+        /*public ClinicListData GetClinics(int page, string[] columns)
         {
             int pageSize = 10;
             int skip = (page - 1) * pageSize;
@@ -58,6 +58,6 @@ namespace ClinicApp.Services
             };
 
             return response;
-        }
+        }*/
     }
 }

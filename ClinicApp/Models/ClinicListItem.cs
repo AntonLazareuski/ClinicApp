@@ -1,4 +1,5 @@
-﻿namespace ClinicApp.Models
+﻿
+namespace ClinicApp.Models
 {
     public class ClinicListItem
     {

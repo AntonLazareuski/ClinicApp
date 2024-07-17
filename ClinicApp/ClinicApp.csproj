@@ -16,10 +16,12 @@
 
   <ItemGroup>
     <PackageReference Include="ClickHouse.Ado" Version="2.0.5" />
+    <PackageReference Include="ClickHouse.Client" Version="7.5.3" />
     <PackageReference Include="EntityFrameworkCore.ClickHouse.6.0" Version="1.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.32" />
     <PackageReference Include="NLog.Extensions.Logging" Version="5.3.11" />
     <PackageReference Include="NLog.Web.AspNetCore" Version="5.3.11" />
+    <PackageReference Include="Spectre.Console.Cli" Version="0.49.2-preview.0.10" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 

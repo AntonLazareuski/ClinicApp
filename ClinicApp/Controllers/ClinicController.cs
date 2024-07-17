@@ -12,9 +12,12 @@ public class ClinicController : ControllerBase
         _clinicService = clinicService;
     }
 
-    [HttpGet("{id}")]
-    public IActionResult GetClinic(int id, string[] columns)
+
+
+    [HttpGet]
+    public IActionResult GetClinic([FromQuery]int id, [FromQuery]string[] columns)
     {
+
         var clinicData = _clinicService.GetClinic(id, columns);
         if (clinicData == null)
         {
@@ -24,8 +27,8 @@ public class ClinicController : ControllerBase
         return Ok(clinicData);
     }
 
-    [HttpGet]
-    public IActionResult GetClinics(int page, string[] columns)
+    /*[HttpGet]*/
+    /*public IActionResult GetClinics(int page, string[] columns)
     {
         var clinicListData = _clinicService.GetClinics(page, columns);
         if (clinicListData == null)
@@ -34,5 +37,5 @@ public class ClinicController : ControllerBase
         }
 
         return Ok(clinicListData);
-    }
+    }*/
 }
